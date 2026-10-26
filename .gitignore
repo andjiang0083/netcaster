@@ -1,0 +1,17 @@
+# 忽略构建产物与发布件（开源仓只带源码）
+.pio/
+.pioignore
+releases/*.bin
+releases/_photo_*.png
+releases/_thumb*.png
+
+# 模拟器截图（每次跑都会变，不入库）
+sim/frame_*.ppm
+sim/frame_*.png
+sim/geo*.png                              # 早期几何实验图，非产品截图
+sim/netcaster_sim                         # 模拟器可执行文件
+releases/store-sim-netcaster.png          # 商店位模拟图（生成物）
+
+# macOS
+.DS_Store
+sim/_archive/

@@ -1,0 +1,52 @@
+{
+ "entry": "NETCASTER",
+ "cover": "releases/cover-1280x720-netcaster.png",
+ "canvas": [
+  1280,
+  720
+ ],
+ "layout": "photo",
+ "hero": {
+  "kind": "photo",
+  "path": "docs/device-cardputer.jpg",
+  "px": [
+   1280,
+   720
+  ],
+  "scale": 1
+ },
+ "texts": [
+  {
+   "s": "NETCASTER",
+   "kind": "text",
+   "bbox": [
+    330,
+    75,
+    806,
+    133
+   ]
+  },
+  {
+   "s": "声呐捕鱼 · 一屏一片海",
+   "kind": "text",
+   "bbox": [
+    332,
+    156,
+    687,
+    188
+   ]
+  },
+  {
+   "s": "Sonar fishing · tilt to aim",
+   "kind": "text",
+   "bbox": [
+    332,
+    212,
+    638,
+    237
+   ]
+  }
+ ],
+ "generator": "tools/mkcover.py",
+ "generated": "2026-10-26T01:39:17"
+}

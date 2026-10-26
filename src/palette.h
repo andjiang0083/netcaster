@@ -1,0 +1,28 @@
+// 自动生成 — GBC 56 色预算内的 11 板 44 色（RGB565）
+#pragma once
+#include <stdint.h>
+
+// 水色由深到浅的 10 档连续渐变（雷达/近景共用）
+static const uint16_t PAL_BG0[4] = {0x0021,0x0883,0x08C6,0x1129};
+static const uint16_t PAL_BG1[4] = {0x0883,0x1129,0x19EC,0x1A2E};
+static const uint16_t PAL_BG2[4] = {0x1A2E,0x2B52,0x3C76,0x4D99};
+static const uint16_t PAL_BG3[4] = {0x2B52,0x4D99,0x8EFD,0xCF9E};
+static const uint16_t PAL_SMALL[4] = {0x08A3,0x2A09,0x5BF1,0xAE9B};
+static const uint16_t PAL_MID[4] = {0x0905,0x130F,0x2D17,0x8F5E};
+static const uint16_t PAL_GOLD[4] = {0x38E0,0x8A62,0xD443,0xFF0F};
+static const uint16_t PAL_MANTA[4] = {0x0884,0x298A,0x5334,0x9D5C}; // 魔鬼鱼：蓝紫
+static const uint16_t PAL_SQUID[4] = {0x2042,0x50C5,0xA1CA,0xEB91}; // 鱿鱼：橙红
+static const uint16_t PAL_SHARK[4] = {0x18C3,0x39E7,0x632C,0x9CF3}; // 鲨鱼：冷灰
+static const uint16_t PAL_DIVER[4]  = {0x0021,0x0290,0x05F5,0x7E1C};  // 潜水员：深蓝+橙
+static const uint16_t PAL_EEL[4] = {0x0902,0x1924,0x3D47,0x9FEF};   // 鳗鱼 青绿
+static const uint16_t PAL_MON[4] = {0x1822,0x48A8,0x918E,0xE3B5};
+static const uint16_t PAL_PLANT[4] = {0x0081,0x1183,0x22E6,0x4D4B};
+static const uint16_t PAL_FX[4] = {0xFFFF,0xFFB7,0xFE67,0xFC43};
+static const uint16_t PAL_UI[4] = {0x0042,0x2146,0x530D,0xB619};
+
+// RAMP 索引 0(深) → 9(浅)
+static inline uint16_t RAMP(int i) {
+  static const uint16_t tbl[10] = {0x0021,0x0883,0x08C6,0x1129,0x19EC,0x1A2E,0x1A2E,0x2B52,0x3C76,0x4D99};
+  if (i < 0) i = 0; if (i > 9) i = 9;
+  return tbl[i];
+}

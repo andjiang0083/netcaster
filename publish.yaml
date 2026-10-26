@@ -1,0 +1,17 @@
+# NETCASTER — M5Burner 发布清单
+# 发布前跑 ~/esp32/tools/release.py netcaster 过门禁
+# bin 必须是真 merged（bootloader + 分区表 + app）：M5Burner 硬编码烧 0x0，app-only 必黑屏。
+# 追加版本靠 name 相同 —— 这个名字一个字符都不能改
+project: netcaster
+platform_entries:
+  - name: NETCASTER
+    device: Cardputer
+    category: Games
+    version: "0.0.2"
+    bin: releases/netcaster-0.0.2-merged.bin
+    cover: releases/cover-1280x720-netcaster.png
+    # ⚠️ 线上 sourceUrl 已被填成 https://github.com/andjiang0083/netcaster，但该仓不存在（404）。
+    #    后端忽略空值，改不回去。两条路：建仓让它成真，或下版换条目。本地卡片如实留空。
+    project_link: ""
+    readback: 2026-10-26 PENDING vid=2114743192098512897  # 0.0.2 已提交审核（道具/经济/引导/潮汐 BGM）
+    published_version: "0.0.1"
