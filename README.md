@@ -1,5 +1,7 @@
 # NETCASTER
 
+![NETCASTER — sonar fishing for M5Stack Cardputer](docs/screens/hero.png)
+
 > An arcade-style **sonar fishing** game for the M5Stack Cardputer.
 > 240×135, no PSRAM, one shot at a time — you watch the radar, aim the cannon, and snipe.
 
@@ -16,6 +18,20 @@
 - **打窝（唯一道具）**：撒一把饵，附近的鱼会游过来。但**打窝不等于上鱼**——窝只负责把鱼叫来，开炮还是你自己的事。
 - **潮汐**：每 100~170 秒来一次，鱼价 ×1.5、鱼群变密，音乐也从大调翻成小调。
 - **鱼有脾气**：小鱼会装死，怪鱼会盯着你，鲨鱼会吃掉身边的小鱼，鱿鱼被盯久了会喷你一脸墨。
+
+## 看一眼
+
+| 雷达：整片海缩成回波点 | 捕获：3× 慢动作收网 |
+|---|---|
+| ![radar](docs/screens/radar.png) | ![catch](docs/screens/catch.png) |
+| **挣脱**：网在抖，鱼在挣 | **打窝**：饵沉下去，鱼才来 |
+| ![escape](docs/screens/escape.png) | ![chumming](docs/screens/chumming.png) |
+
+| 鱼的点阵 | 鱼获图鉴 |
+|---|---|
+| ![fish](docs/screens/fish.png) | ![codex](docs/screens/codex.png) |
+
+> 以上全部是程序在 PC 上渲染出来的真实帧（`sim/build.sh` 导出），不是手绘示意图。
 
 ## 硬件
 
